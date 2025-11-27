@@ -35,8 +35,8 @@ features = [
 [project]
 site_name = "APOCFLY模拟飞行·文档站"
 site_url = "https://docs.apocfly.com"
-repo_url = "https://github.com/Flyleague-Collection/Operating-document"
-repo_name = "Flyleague-Collection/Operating-document"
+repo_url = "https://github.com/apocfly/Operating-document"
+repo_name = "apocfly/Operating-document"
 edit_uri = "edit/main/docs/"
 
 site_description = "Use Markdown language to finish the Operating document."
