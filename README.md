@@ -2,8 +2,9 @@
 
 ![homepage](./docs/assets/homepage.png)
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge)](https://creativecommons.org/licenses/by-nc-sa/4.0) ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=Markdown&logoColor=ffffff) ![BuildStateCard](https://img.shields.io/github/actions/workflow/status/Flyleague-Collection/Operating-document/ci.yml?style=for-the-badge&logo=github&label=build)  ![LastCommitCard](https://img.shields.io/github/last-commit/Flyleague-Collection/Operating-document?display_timestamp=committer&style=for-the-badge&logo=github)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge)](https://creativecommons.org/licenses/by-nc-sa/4.0)![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=Markdown&logoColor=ffffff)![LastCommitCard](https://img.shields.io/github/last-commit/apocfly/Operating-document?display_timestamp=committer&style=for-the-badge&logo=github)  
 
+![BuildStateCard](https://img.shields.io/github/actions/workflow/status/apocfly/Operating-document/build-page.yml?style=for-the-badge&logo=docker&label=build)![BuildStateCard](https://img.shields.io/github/actions/workflow/status/apocfly/Operating-document/release-page.yml?style=for-the-badge&logo=docker&label=publish)
 
 ## 项目简介
 
