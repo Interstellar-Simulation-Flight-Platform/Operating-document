@@ -1,43 +1,45 @@
 @echo off
 echo ==========================================
-echo        ¿ª·¢»·¾³Ò»¼üÆô¶¯½Å±¾
+echo        å¼€å‘ç¯å¢ƒä¸€é”®å¯åŠ¨è„šæœ¬
 echo ==========================================
 
-echo [1/6] ´´½¨PythonĞéÄâ»·¾³...
+chcp 65001
+
+echo [1/6] åˆ›å»ºPythonè™šæ‹Ÿç¯å¢ƒ...
 if exist ".venv" (
-    echo  ĞéÄâ»·¾³ÒÑ´æÔÚ£¬Ìø¹ı´´½¨
+    echo  è™šæ‹Ÿç¯å¢ƒå·²å­˜åœ¨ï¼Œè·³è¿‡åˆ›å»º
 ) else (
     python -m venv .venv
     if %errorlevel% neq 0 (
-        echo  ĞéÄâ»·¾³´´½¨Ê§°Ü
+        echo  è™šæ‹Ÿç¯å¢ƒåˆ›å»ºå¤±è´¥
         pause
         exit /b 1
     )
-    echo  ĞéÄâ»·¾³´´½¨³É¹¦
+    echo  è™šæ‹Ÿç¯å¢ƒåˆ›å»ºæˆåŠŸ
 )
 
-echo [2/6] ¼¤»îĞéÄâ»·¾³...
+echo [2/6] æ¿€æ´»è™šæ‹Ÿç¯å¢ƒ...
 call .venv\Scripts\activate.bat
 
-echo [3/6] Éı¼¶pip...
+echo [3/6] å‡çº§pip...
 python -m pip install --upgrade pip
 
-echo [4/6] °²×°ÏîÄ¿ÒÀÀµ...
+echo [4/6] å®‰è£…é¡¹ç›®ä¾èµ–...
 if exist "requirements.txt" (
 	if exist ".venv" (
-		echo ÏîÄ¿ÒÀÀµÒÑ°²×°Íê³É
+		echo é¡¹ç›®ä¾èµ–å·²å®‰è£…å®Œæˆ
 	) else (
 		pip install -r requirements.txt
 		pip freeze
 	)
 ) else (
-    echo ! Î´ÕÒµ½requirements.txtÎÄ¼ş
+    echo ! æœªæ‰¾åˆ°requirements.txtæ–‡ä»¶
 )
 
-echo [5/6] ¸üĞÂZensical...
+echo [5/6] æ›´æ–°Zensical...
 pip install --upgrade --force-reinstall zensical
 pip freeze > requirements.txt
 
 echo.
-echo [6/6] Æô¶¯VS Code...
+echo [6/6] å¯åŠ¨VS Code...
 code 
